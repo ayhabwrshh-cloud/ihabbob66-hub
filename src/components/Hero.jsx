@@ -19,8 +19,19 @@ const Hero = ({ language }) => {
   const t = content[language]
 
   return (
-    <section id="home" className="bg-gradient-to-r from-primary to-gray-800 text-white py-20 px-4">
-      <div className="max-w-7xl mx-auto text-center animate-fade-in-up">
+    <section id="home" className="relative text-white py-20 px-4 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="/hero-bg.png"
+          alt="Hero Background"
+          className="w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-black/40"></div>
+      </div>
+
+      {/* Content */}
+      <div className="relative max-w-7xl mx-auto text-center animate-fade-in-up z-10">
         <h1 className="text-4xl md:text-6xl font-bold mb-4">{t.title}</h1>
         <p className="text-lg md:text-xl text-gray-300 mb-8">{t.subtitle}</p>
         

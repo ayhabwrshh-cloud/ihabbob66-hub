@@ -110,7 +110,12 @@ const Products = ({ language }) => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-4xl font-bold mb-4">{t.title}</h2>
-          <p className="text-gray-600 text-lg">{t.subtitle}</p>
+          <p className="text-gray-600 text-lg mb-6">{t.subtitle}</p>
+          <img
+            src="/products-hero.png"
+            alt={t.title}
+            className="w-full h-48 md:h-64 object-cover rounded-xl shadow-lg"
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

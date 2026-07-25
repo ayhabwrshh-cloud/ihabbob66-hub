@@ -50,8 +50,17 @@ const Contact = ({ language }) => {
   }
 
   return (
-    <section id="contact" className="py-16 px-4 bg-light">
-      <div className="max-w-7xl mx-auto">
+    <section id="contact" className="relative py-16 px-4 overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src="/contact-bg.png"
+          alt="Contact Background"
+          className="w-full h-full object-cover opacity-20"
+        />
+        <div className="absolute inset-0 bg-light/80"></div>
+      </div>
+      <div className="relative max-w-7xl mx-auto">
         <div className="text-center mb-12 animate-fade-in-up">
           <h2 className="text-4xl font-bold mb-4">{t.title}</h2>
           <p className="text-gray-600 text-lg">{t.subtitle}</p>
