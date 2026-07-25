@@ -110,24 +110,35 @@ const Contact = ({ language }) => {
           <div className="space-y-8">
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-accent">📞 {t.phone}</h3>
-              <p className="text-gray-700">+966 XX XXX XXXX</p>
+              <p className="text-gray-700" dir="ltr">+20 122 797 8643</p>
+              <a href="https://wa.me/201227978643" target="_blank" rel="noopener noreferrer" className="text-accent hover:underline text-sm">
+                {language === 'ar' ? 'تواصل عبر واتساب' : 'Kontakt über WhatsApp'}
+              </a>
+            </div>
+
+            <div className="bg-white p-6 rounded-lg shadow-lg">
+              <h3 className="text-2xl font-bold mb-4 text-accent">✉️ {language === 'ar' ? 'البريد الإلكتروني' : 'E-Mail'}</h3>
+              <p className="text-gray-700" dir="ltr">mo_2006s@yahoo.com</p>
+              <a href="mailto:mo_2006s@yahoo.com" className="text-accent hover:underline text-sm">
+                {language === 'ar' ? 'أرسل بريد إلكتروني' : 'E-Mail senden'}
+              </a>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-accent">📍 {t.address}</h3>
-              <p className="text-gray-700">{language === 'ar' ? 'المملكة العربية السعودية' : 'Saudi-Arabien'}</p>
+              <p className="text-gray-700">{language === 'ar' ? 'مصر' : 'Ägypten'}</p>
             </div>
 
             <div className="bg-white p-6 rounded-lg shadow-lg">
               <h3 className="text-2xl font-bold mb-4 text-accent">🌐 {t.followUs}</h3>
               <div className="flex gap-4">
-                <a href="https://www.tiktok.com/@ihabbob66" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-accent transition">
+                <a href="https://www.tiktok.com/@ihabbob66" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-accent transition" title="TikTok">
                   🎵
                 </a>
-                <a href="#" className="text-3xl hover:text-accent transition">
-                  📱
+                <a href="https://wa.me/201227978643" target="_blank" rel="noopener noreferrer" className="text-3xl hover:text-accent transition" title="WhatsApp">
+                  💬
                 </a>
-                <a href="#" className="text-3xl hover:text-accent transition">
+                <a href="mailto:mo_2006s@yahoo.com" className="text-3xl hover:text-accent transition" title="Email">
                   📧
                 </a>
               </div>

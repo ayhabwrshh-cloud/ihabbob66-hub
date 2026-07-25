@@ -39,6 +39,7 @@ const Footer = ({ language }) => {
               <li><a href="#home" className="hover:text-accent transition">{language === 'ar' ? 'الرئيسية' : 'Startseite'}</a></li>
               <li><a href="#videos" className="hover:text-accent transition">{language === 'ar' ? 'الفيديوهات' : 'Videos'}</a></li>
               <li><a href="#products" className="hover:text-accent transition">{language === 'ar' ? 'المنتجات' : 'Produkte'}</a></li>
+              <li><a href="#blog" className="hover:text-accent transition">{language === 'ar' ? 'مقالات' : 'Blog'}</a></li>
               <li><a href="#contact" className="hover:text-accent transition">{language === 'ar' ? 'تواصل معنا' : 'Kontakt'}</a></li>
             </ul>
           </div>
@@ -59,11 +60,11 @@ const Footer = ({ language }) => {
               <a href="https://www.tiktok.com/@ihabbob66" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition">
                 🎵
               </a>
-              <a href="#" className="hover:text-accent transition">
-                📱
+              <a href="https://wa.me/201227978643" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition" title="WhatsApp">
+                💬
               </a>
-              <a href="#" className="hover:text-accent transition">
-                📧
+              <a href="https://www.tiktok.com/@ihabbob66" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition" title="TikTok">
+                🎵
               </a>
             </div>
           </div>

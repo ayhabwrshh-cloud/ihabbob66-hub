@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Videos from './components/Videos'
 import Products from './components/Products'
 import AdSpace from './components/AdSpace'
+import Blog from './components/Blog'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 
@@ -16,6 +17,7 @@ function App() {
       <Hero language={language} />
       <AdSpace position="top" />
       <Videos language={language} />
+      <Blog language={language} />
       <AdSpace position="middle" />
       <Products language={language} />
       <AdSpace position="bottom" />

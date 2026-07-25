@@ -1,45 +1,58 @@
+import { useEffect, useRef } from 'react'
+
 const Videos = ({ language }) => {
+  const tiktokContainerRef = useRef(null)
+
   const content = {
     ar: {
       title: 'أفضل الفيديوهات',
       subtitle: 'اكتشف أفضل محتوياتنا على TikTok',
-      watchMore: 'شاهد المزيد على TikTok'
+      watchMore: 'شاهد المزيد على TikTok',
+      loading: 'جاري تحميل الفيديوهات...'
     },
     de: {
       title: 'Beste Videos',
       subtitle: 'Entdecken Sie unsere besten Inhalte auf TikTok',
-      watchMore: 'Mehr auf TikTok ansehen'
+      watchMore: 'Mehr auf TikTok ansehen',
+      loading: 'Videos werden geladen...'
     }
   }
 
   const t = content[language]
 
-  const videos = [
+  // أفضل الفيديوهات من حساب ihabbob66 (الأكثر مشاهدة)
+  const topVideos = [
     {
-      id: 1,
-      title: language === 'ar' ? 'فيديو 1' : 'Video 1',
-      thumbnail: 'https://via.placeholder.com/300x400?text=Video+1',
-      views: '50K'
+      id: '7665325429045103892',
+      url: 'https://www.tiktok.com/@ihabbob66/video/7665325429045103892',
     },
     {
-      id: 2,
-      title: language === 'ar' ? 'فيديو 2' : 'Video 2',
-      thumbnail: 'https://via.placeholder.com/300x400?text=Video+2',
-      views: '75K'
+      id: '7664868034695269652',
+      url: 'https://www.tiktok.com/@ihabbob66/video/7664868034695269652',
     },
     {
-      id: 3,
-      title: language === 'ar' ? 'فيديو 3' : 'Video 3',
-      thumbnail: 'https://via.placeholder.com/300x400?text=Video+3',
-      views: '120K'
+      id: '7664643303656164629',
+      url: 'https://www.tiktok.com/@ihabbob66/video/7664643303656164629',
     },
     {
-      id: 4,
-      title: language === 'ar' ? 'فيديو 4' : 'Video 4',
-      thumbnail: 'https://via.placeholder.com/300x400?text=Video+4',
-      views: '95K'
+      id: '7664157507404762389',
+      url: 'https://www.tiktok.com/@ihabbob66/video/7664157507404762389',
     },
   ]
+
+  useEffect(() => {
+    // Load TikTok embed script when component mounts
+    const script = document.createElement('script')
+    script.src = 'https://www.tiktok.com/embed.js'
+    script.async = true
+    script.defer = true
+    document.body.appendChild(script)
+
+    return () => {
+      // Clean up script on unmount
+      document.body.removeChild(script)
+    }
+  }, [])
 
   return (
     <section id="videos" className="py-16 px-4 bg-light">
@@ -50,21 +63,29 @@ const Videos = ({ language }) => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-          {videos.map((video) => (
-            <div key={video.id} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105">
-              <div className="relative overflow-hidden h-64">
-                <img
-                  src={video.thumbnail}
-                  alt={video.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center hover:bg-opacity-60 transition">
-                  <div className="text-white text-4xl">▶</div>
-                </div>
+          {topVideos.map((video) => (
+            <div
+              key={video.id}
+              className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-2xl transition transform hover:scale-105"
+            >
+              <div className="relative overflow-hidden h-auto min-h-[480px] flex items-center justify-center bg-gray-50 p-2">
+                <blockquote
+                  className="tiktok-embed"
+                  cite={video.url}
+                  data-video-id={video.id}
+                  style={{ width: '100%', height: '100%' }}
+                >
+                  <section>
+                    <a target="_blank" href={video.url}>
+                      @ihabbob66
+                    </a>
+                  </section>
+                </blockquote>
               </div>
               <div className="p-4">
-                <h3 className="font-bold text-lg mb-2">{video.title}</h3>
-                <p className="text-accent font-semibold">{video.views} {language === 'ar' ? 'مشاهدة' : 'Aufrufe'}</p>
+                <p className="text-accent font-semibold text-center">
+                  {language === 'ar' ? 'شاهد على TikTok' : 'Auf TikTok ansehen'}
+                </p>
               </div>
             </div>
           ))}

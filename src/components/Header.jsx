@@ -8,6 +8,7 @@ const Header = ({ language, setLanguage }) => {
       home: 'الرئيسية',
       videos: 'الفيديوهات',
       products: 'المنتجات',
+      blog: 'مقالات',
       contact: 'تواصل معنا',
       tiktok: 'متابعة على TikTok'
     },
@@ -15,6 +16,7 @@ const Header = ({ language, setLanguage }) => {
       home: 'Startseite',
       videos: 'Videos',
       products: 'Produkte',
+      blog: 'Blog',
       contact: 'Kontakt',
       tiktok: 'Auf TikTok folgen'
     }
@@ -36,6 +38,7 @@ const Header = ({ language, setLanguage }) => {
         <nav className="hidden md:flex gap-6 items-center">
           <a href="#home" className="hover:text-accent transition">{t.home}</a>
           <a href="#videos" className="hover:text-accent transition">{t.videos}</a>
+          <a href="#blog" className="hover:text-accent transition">{t.blog}</a>
           <a href="#products" className="hover:text-accent transition">{t.products}</a>
           <a href="#contact" className="hover:text-accent transition">{t.contact}</a>
           
@@ -70,6 +73,7 @@ const Header = ({ language, setLanguage }) => {
         <nav className="md:hidden bg-primary border-t border-accent p-4 flex flex-col gap-3">
           <a href="#home" className="hover:text-accent transition">{t.home}</a>
           <a href="#videos" className="hover:text-accent transition">{t.videos}</a>
+          <a href="#blog" className="hover:text-accent transition">{t.blog}</a>
           <a href="#products" className="hover:text-accent transition">{t.products}</a>
           <a href="#contact" className="hover:text-accent transition">{t.contact}</a>
           
