@@ -102,6 +102,50 @@ const Products = ({ language }) => {
       category: language === 'ar' ? 'أدوات يدوية' : 'Werkzeuge',
       image: 'https://m.media-amazon.com/images/I/71BvGzJzJmL._AC_UF894,1000_QL80_.jpg',
       link: `https://www.amazon.eg/s?k=%D8%A3%D8%AF%D8%A7%D8%A9+%D9%84%D8%AD%D8%A7%D9%85+%D8%A5%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A&tag=${AFFILIATE_TAG}`,
+    },
+    {
+      id: 9,
+      name: language === 'ar' ? 'توربين ريح صغير 5V ⚡' : 'Mini Wind Turbine 5V',
+      description: language === 'ar' ? 'مولد ريح صغير لتوليد الكهرباء من الرياح - مثالي لمشاريع الطاقة المتجددة والتوربينات. سعر مخفض لفترة محدودة!' : 'Kleiner Windgenerator zur Stromerzeugung aus Wind - ideal für Erneuerbare-Energie-Projekte.',
+      price: language === 'ar' ? '530 جنيه' : '530 LE',
+      discount: language === 'ar' ? 'عرض خاص 🔥' : 'Sonderangebot',
+      icon: '🌬️',
+      category: language === 'ar' ? 'طاقة متجددة' : 'Erneuerbare Energie',
+      image: 'https://m.media-amazon.com/images/I/61pL7KxJzJL._AC_UF894,1000_QL80_.jpg',
+      link: `https://www.amazon.eg/-/en/Mini-Wind-Turbine-Generator-5Vdc/dp/B0GHZ5244Z?tag=${AFFILIATE_TAG}`,
+    },
+    {
+      id: 10,
+      name: language === 'ar' ? 'وحدة تحكم شحن شمسي ⚡' : 'Solar Laderegler-Modul',
+      description: language === 'ar' ? 'وحدة تحكم شحن بالطاقة الشمسية لأجهزة Arduino والمشاريع الإلكترونية - سعر صغير جداً! مثالية للوحة الشمسية والبطاريات.' : 'Solar-Laderegler-Modul für Arduino und Elektronikprojekte - unschlagbarer Preis!',
+      price: language === 'ar' ? '132 جنيه' : '132 LE',
+      discount: language === 'ar' ? 'أقل سعر 🔥' : 'Bestpreis',
+      icon: '🔆',
+      category: language === 'ar' ? 'طاقة شمسية' : 'Solarenergie',
+      image: 'https://m.media-amazon.com/images/I/51xGvKJzJmL._AC_UF894,1000_QL80_.jpg',
+      link: `https://www.amazon.eg/-/en/Solar-Panel-Charging-Controller-Module/dp/B0CBG5XQSH?tag=${AFFILIATE_TAG}`,
+    },
+    {
+      id: 11,
+      name: language === 'ar' ? 'طقم توربين ماء DIY ⚡' : 'DIY Wasser-Turbinen-Kit',
+      description: language === 'ar' ? 'طقم صناعة توربين مائي لتوليد الكهرباء من المياه الجارية - مشروع عملي ممتع لكل مخترع وهاوي!' : 'DIY-Bausatz für eine Wasser-Turbine zur Stromerzeugung aus fließendem Wasser!',
+      price: language === 'ar' ? '1000 جنيه' : '1000 LE',
+      discount: language === 'ar' ? 'مشروع DIY 🔥' : 'DIY-Projekt',
+      icon: '💧',
+      category: language === 'ar' ? 'طاقة متجددة' : 'Erneuerbare Energie',
+      image: 'https://m.media-amazon.com/images/I/71xGvKJzJmL._AC_UF894,1000_QL80_.jpg',
+      link: `https://www.amazon.eg/-/en/DIY-Kit-Generator-Water-Turbine-8211/dp/B0DD3RYHPH?tag=${AFFILIATE_TAG}`,
+    },
+    {
+      id: 12,
+      name: language === 'ar' ? 'محرك سيرفو Arduino ⚡' : 'Arduino Servo-Motor',
+      description: language === 'ar' ? 'محرك سيرفو صغير لبرمجة ومشاريع Arduino والروبوتات والأذرع الآلية - سعر ممتاز للهاوين!' : 'Kleiner Servo-Motor für Arduino, Roboter und Programmierprojekte!',
+      price: language === 'ar' ? '110 جنيه' : '110 LE',
+      discount: language === 'ar' ? 'سعر مخفض 🔥' : 'Rabatt',
+      icon: '🤖',
+      category: language === 'ar' ? 'محركات' : 'Motoren',
+      image: 'https://m.media-amazon.com/images/I/61zL0q8JWNL._AC_UF894,1000_QL80_.jpg',
+      link: `https://www.amazon.eg/-/en/Tower-Micro-Servo-Motor-Arduino/dp/B096QWKM9K?tag=${AFFILIATE_TAG}`,
     }
   ]
 
@@ -128,6 +172,11 @@ const Products = ({ language }) => {
                 </span>
               </div>
               <div className="p-6">
+                {product.discount && (
+                  <span className="inline-block bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full mb-2">
+                    {product.discount}
+                  </span>
+                )}
                 <h3 className="font-bold text-lg mb-2">{product.name}</h3>
                 <p className="text-gray-600 text-sm mb-4">{product.description}</p>
                 <div className="border-t pt-4 mb-4">
