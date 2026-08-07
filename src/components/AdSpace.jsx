@@ -5,29 +5,26 @@ const AdSpace = ({ position }) => {
     bottom: 'my-8'
   }
 
+  const adSlots = {
+    top: '1000000001',
+    middle: '1000000002',
+    bottom: '1000000003'
+  }
+
   return (
     <div className={`${positions[position]} px-4`}>
-      <div className="max-w-7xl mx-auto">
-        <div className="bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg p-8 text-center">
-          <p className="text-gray-600 font-semibold mb-2">
-            {position === 'top' && '📢 مساحة إعلانية - Google AdSense (أعلى الصفحة)'}
-            {position === 'middle' && '📢 مساحة إعلانية - Google AdSense (منتصف الصفحة)'}
-            {position === 'bottom' && '📢 مساحة إعلانية - Google AdSense (أسفل الصفحة)'}
-          </p>
-          <p className="text-gray-500 text-sm">
-            {position === 'top' && 'Ad Space - Google AdSense (Top of Page)'}
-            {position === 'middle' && 'Ad Space - Google AdSense (Middle of Page)'}
-            {position === 'bottom' && 'Ad Space - Google AdSense (Bottom of Page)'}
-          </p>
-          <div className="mt-4 p-4 bg-white rounded inline-block">
-            <code className="text-xs text-gray-600">
-              &lt;ins className="adsbygoogle"&gt;&lt;/ins&gt;
-            </code>
-          </div>
-          <p className="text-xs text-gray-500 mt-2">
-            أضف كود Google AdSense هنا | Fügen Sie hier den Google AdSense-Code ein
-          </p>
-        </div>
+      <div className="max-w-7xl mx-auto text-center">
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block', minWidth: '280px', minHeight: '90px' }}
+          data-ad-client="ca-pub-9048271460620123"
+          data-ad-slot={adSlots[position]}
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        ></ins>
+        <script type="text/javascript">
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
       </div>
     </div>
   )
