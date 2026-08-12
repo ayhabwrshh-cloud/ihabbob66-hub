@@ -1,0 +1,10 @@
+# Robots.txt for ابطال العرب (ihabbob66-hub)
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://pjigygpXXyjyrtlo-1.vercel.app/sitemap.xml
+
+# Block common crawler noise
+Disallow: /api/
+Disallow: /node_modules/
