@@ -4,15 +4,15 @@ const Hero = ({ language }) => {
       title: 'مرحباً بك في عالم المحتوى الإبداعي',
       subtitle: 'اكتشف محتوى حصري وتعلم من أفضل الدورات التدريبية',
       cta: 'ابدأ الآن',
-      followers: '148.6K متابع',
-      likes: '823.8K إعجاب'
+      followers: '155.2K متابع',
+      likes: '860.7K إعجاب'
     },
     de: {
       title: 'Willkommen in der Welt des kreativen Inhalts',
       subtitle: 'Entdecken Sie exklusive Inhalte und lernen Sie aus den besten Kursen',
       cta: 'Jetzt beginnen',
-      followers: '148.6K Follower',
-      likes: '823.8K Likes'
+      followers: '155.2K Follower',
+      likes: '860.7K Likes'
     }
   }
 
