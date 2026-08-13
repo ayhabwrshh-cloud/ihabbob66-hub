@@ -40,6 +40,7 @@ const Footer = ({ language }) => {
               <li><a href="#videos" className="hover:text-accent transition">{language === 'ar' ? 'الفيديوهات' : 'Videos'}</a></li>
               <li><a href="#products" className="hover:text-accent transition">{language === 'ar' ? 'المنتجات' : 'Produkte'}</a></li>
               <li><a href="#blog" className="hover:text-accent transition">{language === 'ar' ? 'مقالات' : 'Blog'}</a></li>
+              <li><a href="https://technowizardry123.blogspot.com" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition">{language === 'ar' ? 'مدونتنا' : 'Unser Blog'}</a></li>
               <li><a href="#contact" className="hover:text-accent transition">{language === 'ar' ? 'تواصل معنا' : 'Kontakt'}</a></li>
             </ul>
           </div>

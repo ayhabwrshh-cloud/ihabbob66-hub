@@ -9,6 +9,7 @@ const Header = ({ language, setLanguage }) => {
       videos: 'الفيديوهات',
       products: 'المنتجات',
       blog: 'مقالات',
+      blogger: 'مدونتنا',
       contact: 'تواصل معنا',
       tiktok: 'متابعة على TikTok'
     },
@@ -17,6 +18,7 @@ const Header = ({ language, setLanguage }) => {
       videos: 'Videos',
       products: 'Produkte',
       blog: 'Blog',
+      blogger: 'Unser Blog',
       contact: 'Kontakt',
       tiktok: 'Auf TikTok folgen'
     }
@@ -39,6 +41,14 @@ const Header = ({ language, setLanguage }) => {
           <a href="#home" className="hover:text-accent transition">{t.home}</a>
           <a href="#videos" className="hover:text-accent transition">{t.videos}</a>
           <a href="#blog" className="hover:text-accent transition">{t.blog}</a>
+          <a
+            href="https://technowizardry123.blogspot.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition"
+          >
+            {t.blogger}
+          </a>
           <a href="#products" className="hover:text-accent transition">{t.products}</a>
           <a href="#contact" className="hover:text-accent transition">{t.contact}</a>
           
@@ -74,6 +84,14 @@ const Header = ({ language, setLanguage }) => {
           <a href="#home" className="hover:text-accent transition">{t.home}</a>
           <a href="#videos" className="hover:text-accent transition">{t.videos}</a>
           <a href="#blog" className="hover:text-accent transition">{t.blog}</a>
+          <a
+            href="https://technowizardry123.blogspot.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-accent transition"
+          >
+            {t.blogger}
+          </a>
           <a href="#products" className="hover:text-accent transition">{t.products}</a>
           <a href="#contact" className="hover:text-accent transition">{t.contact}</a>
           

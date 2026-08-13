@@ -351,6 +351,26 @@ const Blog = ({ language }) => {
           ))}
         </div>
 
+        {/* Blogger Link Banner */}
+        <div className="mt-8 bg-gradient-to-r from-primary to-accent text-white rounded-xl p-8 text-center">
+          <h3 className="text-2xl font-bold mb-3">
+            {language === 'ar' ? '📖 تابع مدونتنا الكاملة' : '📖 Folgen Sie unserem Blog'}
+          </h3>
+          <p className="text-gray-200 mb-4">
+            {language === 'ar'
+              ? 'مقالات أكثر وتجارب حصرية بصور وفيديوهات خطوة بخطوة — من تقطيع البطاطس إلى خلاطات الأسمنت والمشاريع الكهربائية'
+              : 'Mehr Artikel und exklusive Experimente mit Schritt-für-Schritt-Bildern und Videos'}
+          </p>
+          <a
+            href="https://technowizardry123.blogspot.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-primary px-6 py-2 rounded-lg font-bold hover:bg-gray-100 transition inline-block"
+          >
+            {language === 'ar' ? 'افتح المدونة ←' : 'Zum Blog öffnen ←'}
+          </a>
+        </div>
+
         {/* Info Banner */}
         <div className="mt-12 bg-gradient-to-r from-accent to-primary text-white rounded-xl p-8 text-center">
           <h3 className="text-2xl font-bold mb-3">
