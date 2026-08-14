@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Videos from './components/Videos'
 import Products from './components/Products'
 import AdSpace from './components/AdSpace'
+import Site123Section from './components/Site123Section'
 import Blog from './components/Blog'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -61,6 +62,7 @@ function App() {
       <SeoSchema />
       <Header language={language} setLanguage={setLanguage} />
       <Hero language={language} />
+      <Site123Section language={language} />
       <AdSpace position="top" />
       <Videos language={language} />
       <Blog language={language} />
