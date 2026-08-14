@@ -6,6 +6,7 @@ import Videos from './components/Videos'
 import Products from './components/Products'
 import AdSpace from './components/AdSpace'
 import Site123Section from './components/Site123Section'
+import AlfanStore from './components/AlfanStore'
 import Blog from './components/Blog'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -69,6 +70,7 @@ function App() {
       <AdSpace position="middle" />
       <Products language={language} />
       <AdSpace position="bottom" />
+      <AlfanStore language={language} />
       <Contact language={language} />
       <Footer language={language} />
     </div>
