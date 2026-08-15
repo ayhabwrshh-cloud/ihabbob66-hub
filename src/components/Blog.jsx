@@ -180,6 +180,54 @@ const Blog = ({ language }) => {
       ]
     },
     {
+      id: 5,
+      title: language === 'ar' ? 'الروبوت بتاع جوجل: جيمني Robotics يعيد تعريف مستقبل الذكاء الاصطناعي' : 'Der Google-Roboter: Gemini Robotics und die Zukunft der KI',
+      excerpt: language === 'ar' ? 'تعرّف على أحدث ابتكار من Google DeepMind — روبوت جيمني الذي يدمج الذكاء الاصطناعي مع العالم المادي. ماذا يعني هذا لمستقبل الروبوتات المنزلية والصناعية؟' : 'Lernen Sie Googles neueste Innovation kennen — den Gemini-Roboter, der KI mit der physischen Welt verbindet.',
+      image: '/blog-images/gemini-robot.jpg',
+      category: 'inventions',
+      icon: '🤖',
+      date: '2026',
+      readTime: 7,
+      parts: [
+        {
+          title: language === 'ar' ? 'مقدمة: ما هو الروبوت بتاع جوجل؟' : 'Einführung: Was ist der Google-Roboter?',
+          body: language === 'ar'
+            ? 'أعلنت Google DeepMind عن نموذج Gemini Robotics — وهو نظام ذكاء اصطناعي مصمم خصيصاً للروبوتات. الفكرة ببساطة: نفس الذكاء الاصطناعي القوي الذي يعمل خلف جوجل جيمني في هاتفك، لكن الآن يستطيع التحكم في روبوت حقيقي يتحرك ويتفاعل مع العالم من حوله. هذا يعني روبوتات تفهم أوامرك الطبيعية وتحللك مشاكل حقيقية.'
+            : 'Google DeepMind stellte Gemini Robotics vor — ein KI-Modell, das speziell für Roboter entwickelt wurde. Es verbindet die leistungsstarke Gemini-KI mit physischen Robotern, die verstehen und handeln können.'
+        },
+        {
+          title: language === 'ar' ? 'كيف يعمل جيمني Robotics؟' : 'Wie funktioniert Gemini Robotics?',
+          body: language === 'ar'
+            ? 'يعمل النظام على 3 مبادئ أساسية:\n1. الفهم البصري: يشاهد الروبوت البيئة عبر الكاميرات ويفهمها مثل البشر\n2. التخطيط الذكي: يقرر أفضل خطوات التنفيذ بنفسه بناءً على الموقف\n3. التنفيذ الآمن: يتحكم في الذراعين أو العجلات بحركة دقيقة وآمنة\nالميزة الكبرى أنه لا يحتاج لبرمجة مسبقة لكل مهمة — تقوله «جهّز لي كوب الشاي» وهو ينفذ.'
+            : 'Das System basiert auf 3 Grundprinzipien:\n1. Visuelles Verständnis: Der Roboter sieht und versteht die Umgebung\n2. Intelligente Planung: Er entscheidet selbst über die besten Schritte\n3. Sichere Ausführung: Präzise und sichere Bewegungen\nDer größte Vorteil: keine Vorprogrammierung nötig — einfach sagen und er führt aus.'
+        },
+        {
+          title: language === 'ar' ? 'ماذا يعني هذا للمبتكرين العرب؟' : 'Was bedeutet das für arabische Erfinder?',
+          body: language === 'ar'
+            ? 'مجال الروبوتات كان حكرًا على الشركات الكبرى بتكاليف خيالية، لكن الآن مع انتشار نماذج الذكاء الاصطناعي:\n• يمكنك بناء روبوت بسيط بمحرك Arduino وراسبيري باي\n• ربطه بتطبيقات الذكاء الاصطناعي المفتوحة (مثل Hugging Face)\n• تعليمه مهام منزلية بسيطة بنفسك\n• البيع على أمازون أو تسويق فكرتك عالمياً\nالمستقبل مفتوح لكل مبتكر يبدأ من منزله.'
+            : 'Die Robotik ist nicht mehr nur Großkonzernen vorbehalten:\n• Bauen Sie einfache Roboter mit Arduino und Raspberry Pi\n• Verbinden Sie offene KI-Modelle (z. B. Hugging Face)\n• Trainieren Sie ihn auf einfache Haushaltsaufgaben\n• Verkaufen Sie Ihre Idee auf Amazon oder weltweit'
+        },
+        {
+          title: language === 'ar' ? 'الروبوتات الذكية المتاحة للشراء الآن' : 'Jetzt kaufbare smarte Roboter',
+          body: language === 'ar'
+            ? 'بينما يعمل جوجل على نماذج احترافية، يمكنك اليوم شراء روبوتات ذكية ممتازة من أمازون مصر:\n• كلب روبوت ذكي بتقنية AI مع أوامر صوتية (3,299 ج)\n• روبوت EMO الرفيق الذكي لسطح المكتب (45,000 ج)\n• مكنسة شاومي روبوت بالتخطيط الذكي (6,640 ج)\n• روبوتات تفاعلية للأطفال بأسعار تبدأ من 379 ج\nشاهد قسم الروبوتات في موقعنا للحصول على أحدث الأسعار والروابط المباشرة.'
+            : 'Während Google an Profi-Modellen arbeitet, können Sie heute bereits smarte Roboter auf Amazon Egypt kaufen:\n• KI-Roboterhund mit Sprachbefehlen (3.299 EGP)\n• EMO Desktop-Begleiter (45.000 EGP)\n• Xiaomi Saugroboter (6.640 EGP)\n• Interaktive Kinder-Roboter ab 379 EGP'
+        },
+        {
+          title: language === 'ar' ? 'نصائح قبل شراء أي روبوت ذكي' : 'Tipps vor dem Kauf eines smarten Roboters',
+          body: language === 'ar'
+            ? '• تأكد من وجود ضمان رسمي من الموزع\n• تحقق من توافق التطبيق مع هاتفك قبل الشراء\n• اقرأ مراجعات المشترين الحقيقيين في أمازون\n• ابدأ بروبوت بسيط قبل الاستثمار في نماذج غالية\n• احذر من المنتجات المقلدة — اشترِ من بائعين موثوقين فقط'
+            : '• Offizielle Garantie des Händlers prüfen\n• App-Kompatibilität mit Ihrem Handy vor dem Kauf prüfen\n• Echte Käuferrezensionen auf Amazon lesen\n• Beginnen Sie mit einem einfachen Roboter\n• Vorsicht vor gefälschten Produkten — nur vertrauenswürdige Verkäufer'
+        },
+        {
+          title: language === 'ar' ? 'الخلاصة' : 'Fazit',
+          body: language === 'ar'
+            ? 'الروبوت بتاع جوجل (Gemini Robotics) يمثل نقلة نوعية في تاريخ التكنولوجيا — ذكاء اصطناعي يفهم العالم ويتفاعل معه جسديًا. ولأول مرة، أصبح عالم الروبوتات في متناول المبتكرين العرب: سواء كنت ستبني روبوتك بنفسك أو تشتري روبوتًا ذكيًا جاهزًا من أمازون مصر، فالفرصة أمامك الآن. تابع فيديوهاتنا على TikTok لرؤية الروبوتات بالتجربة العملية.'
+            : 'Gemini Robotics ist ein Wendepunkt in der Technologiegeschichte — KI, die die physische Welt versteht. Zum ersten Mal ist die Robotik für arabische Erfinder zugänglich: Ob Sie Ihren eigenen Roboter bauen oder einen fertigen auf Amazon Egypt kaufen — die Gelegenheit ist jetzt.'
+        }
+      ]
+    },
+    {
       id: 4,
       title: language === 'ar' ? 'أفضل 10 أدوات يجب أن يمتلكها كل مبتكر عربي' : 'Die 10 besten Werkzeuge für jeden Erfinder',
       excerpt: language === 'ar' ? 'قائمة بأهم الأدوات التي يحتاجها كل مبتكر وصانع مشاريع يدوية. من المبتدئين إلى المحترفين، هذه الأدوات ستفتح لك أبواب الإبداع.' : 'Liste der wichtigsten Werkzeuge für jeden Erfinder und DIY-Enthusiasten.',
