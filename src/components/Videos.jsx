@@ -51,6 +51,13 @@ const Videos = ({ language }) => {
   // فيديوهات جديدة من حساب ihabbob66
   const newVideos = [
     {
+      id: '7671258358975941909',
+      url: 'https://www.tiktok.com/@ihabbob66/video/7671258358975941909',
+      title: language === 'ar' ? 'المصباح الأنبوبي القديم - ماذا يوجد داخله؟ أشياء مذهلة' : 'The Old Fluorescent Lamp - What is inside? Amazing things',
+      badge: t.new,
+      thumb: 'https://p19-common-sign.tiktokcdn-us.com/tos-alisg-p-0037/oU1aNDfIiNF4DvafIAorE4UakTjP6AnSEQOCBe~tplv-tiktokx-cropcenter-q:300:400:q70.jpeg?dr=8596&refresh_token=ebd9ff55&x-expires=1786957200&x-signature=6%2FwGzQ55JSbw225d2xLFNey9fAg%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=1d1a97fc&idc=useast5&biz_tag=tt_video&s=AWEME_DETAIL&sc=cover'
+    },
+    {
       id: '7673895919322189076',
       url: 'https://www.tiktok.com/@ihabbob66/video/7673895919322189076',
       title: language === 'ar' ? 'أفكار كراسي بسيطة وعملية - أعمال نجارة DIY' : 'Simple & Practical Chair Ideas - DIY Woodworking',
@@ -87,6 +94,7 @@ const Videos = ({ language }) => {
 
   // أرقام التفاعل من صفحات الفيديو (يتم تحديثها دورياً)
   const videoStats = {
+    '7671258358975941909': { likes: 7293, comments: 81 },
     '7673895919322189076': { likes: 2895, comments: 12 },
     '7631980035771059476': { likes: 1784, comments: 41 },
     '7526975358919363847': { likes: 900, comments: 30 },
