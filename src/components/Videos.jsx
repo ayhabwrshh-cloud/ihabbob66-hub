@@ -51,6 +51,13 @@ const Videos = ({ language }) => {
   // فيديوهات جديدة من حساب ihabbob66
   const newVideos = [
     {
+      id: '7673895919322189076',
+      url: 'https://www.tiktok.com/@ihabbob66/video/7673895919322189076',
+      title: language === 'ar' ? 'أفكار كراسي بسيطة وعملية - أعمال نجارة DIY' : 'Simple & Practical Chair Ideas - DIY Woodworking',
+      badge: t.new,
+      thumb: 'https://p16-common-sign.tiktokcdn.com/tos-alisg-p-0037/o4bpfKGzgGFIMHXAeRAAgSILDkeBewp53utGQT~tplv-tiktokx-origin.image?dr=14575&x-expires=1787043600&x-signature=BLeyhaZhs5sLiUCKjlOiNgfztp4%3D&t=4d5b0474&ps=13740610&shp=81f88b70&shcp=43f4a2f9&idc=my'
+    },
+    {
       id: '7672400725258865940',
       url: 'https://www.tiktok.com/@ihabbob66/video/7672400725258865940',
       title: language === 'ar' ? 'أداة DIY متعددة الوظائف (4 في 1) من أنابيب PVC' : 'DIY Multi-Tool (4-in-1) from PVC Pipes',
@@ -80,6 +87,7 @@ const Videos = ({ language }) => {
 
   // أرقام التفاعل من صفحات الفيديو (يتم تحديثها دورياً)
   const videoStats = {
+    '7673895919322189076': { likes: 2895, comments: 12 },
     '7631980035771059476': { likes: 1784, comments: 41 },
     '7526975358919363847': { likes: 900, comments: 30 },
     '7665325429045103892': { likes: 561, comments: 17 },
